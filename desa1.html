@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Desa Pakijangan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="logo-title">
+        <img src="Logo kab.png" alt="Logo Kab Pasuruan" class="logo" />
+        <h1>Desa Pakijangan</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="profil.html">Profil Desa</a></li>
+          <li><a href="layanan.html">Layanan</a></li>
+          <li><a href="berita.html">Berita</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+      <h2>Selamat Datang di Desa Pakijangan</h2>
+      <p>Desa Pakijangan adalah tempat yang damai, ramah lingkungan, dan penuh semangat gotong royong.</p>
+      <a href="https://www.google.com/maps/place/Pakijangan,+Kec.+Wonorejo,+Pasuruan,+Jawa+Timur/@-7.7315144,112.7936038,15z/data=!3m1!4b1!4m6!3m5!1s0x2dd7d1e6cf99c35f:0x9b323affadac81b2!8m2!3d-7.726838!4d112.8060824!16s%2Fg%2F12lngvw60?entry=ttu&g_ep=EgoyMDI1MDUyOC4wIKXMDSoASAFQAw%3D%3D"
+        class="btn">Jelajahi Desa</a>
+    </section>
+
+    <section class="info">
+      <h3>Berita Terkini</h3>
+      <p>🗓️ Pelayanan administrasi akan berlangsung setiap Senin–Jumat pukul 08.00–14.00 WIB di Balai Desa.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Desa Pakijangan. Dibangun dengan cinta untuk masyarakat.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #f7fafc;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  .container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 20px;
+  }
+
+  /* Header */
+  header {
+    background-color: #2e8b57;
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Baris logo + nama di atas navbar */
+  .logo-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    /* Jarak ke navbar */
+    justify-content: center;
+  }
+
+  /* Logo */
+  .logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    animation: fadeScaleIn 1s ease forwards;
+  }
+
+  /* Animasi logo */
+  @keyframes fadeScaleIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  header h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  /* Navbar */
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 15px;
+    flex-wrap: wrap;
+  }
+
+  nav ul li {
+    margin: 10px 20px;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    position: relative;
+  }
+
+  nav ul li a:hover {
+    color: #ffd700;
+  }
+
+  /* Garis bawah animasi pada navbar */
+  nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #ffd700;
+    transition: width 0.3s ease;
+  }
+
+  nav ul li a:hover::after {
+    width: 100%;
+  }
+
+  /* Hero Section */
+  .hero {
+    background-color: #e6f4ea;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  .hero p {
+    margin-bottom: 20px;
+  }
+
+  .btn {
+    background-color: #2e8b57;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+
+  .btn:hover {
+    background-color: #246b44;
+  }
+
+  /* Info Section */
+  .info {
+    margin-top: 40px;
+    padding: 68px;
+    background-color: #fff;
+    border-left: 5px solid #2e8b57;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+
+  /* Footer */
+  footer {
+    background-color: #2e8b57;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    font-size: 0.9rem;
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    nav ul li {
+      margin: 8px 0;
+    }
+
+    .logo-title {
+      flex-direction: column;
+    }
+
+    .logo-title h1 {
+      font-size: 1.6rem;
+    }
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+</style>
+
+</html>

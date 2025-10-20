@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Desa Pakijangan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="logo-title">
+        <img src="Logo kab.png" alt="Logo Kab Pasuruan" class="logo" />
+        <h1>Desa Pakijangan</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="profil.html">Profil Desa</a></li>
+          <li><a href="layanan.html">Layanan</a></li>
+          <li><a href="berita.html" class="active">Berita</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+    <h2>Berita Terkini</h2>
+    <p>Informasi terbaru seputar kegiatan di Desa Pakijangan</p>
+  </section>
+
+  <section class="info" data-aos="fade-up-right">
+    <h3>20 Februari 2025 – Gotong Royong Bersih Lapangan Rea Reo</h3>
+    <p>
+      Warga bersama perangkat desa melakukan kegiatan bersih-bersih lapangan Rea Reo untuk menjaga kebersihan lingkungan
+      dan persiapan lomba agustusan.
+    </p>
+  </section>
+
+  <section class="info" data-aos="fade-up-right">
+    <h3>25 Februari 2025 – Seleksi Pemain Bupati Cup 2025</h3>
+    <p>
+      Pagerwojo FC membuka seleksi pemain muda desa untuk mengikuti turnamen Bupati Cup 2025. Kegiatan ini disambut
+      antusias warga, terutama remaja usia 15–25 tahun.
+    </p>
+  </section>
+
+  <section class="info" data-aos="fade-up-right">
+    <h3>14 Maret 2025 – Pelatihan Digitalisasi UMKM</h3>
+    <p>
+      Dinas terkait memberikan pelatihan pemasaran online kepada pelaku UMKM di balai desa. Pelatihan ini bertujuan
+      meningkatkan ekonomi lokal melalui teknologi.
+    </p>
+  </section>
+
+  <section class="info" data-aos="fade-up-right">
+    <h3>5 April 2025 – Penanaman Seribu Bibit Pohon</h3>
+    <p>
+      Dalam rangka memperingati Hari Lingkungan Hidup, warga Desa Pakijangan bersama karang taruna melakukan penanaman
+      pohon di bantaran sungai dan lahan kosong.
+    </p>
+  </section>
+
+  <section class="info" data-aos="fade-up-right">
+    <h3>17 April 2025 – Lomba Mewarnai & Dongeng Anak</h3>
+    <p>
+      Untuk memperingati Hari Kartini, desa mengadakan lomba mewarnai dan dongeng anak di balai desa. Acara ini
+      meningkatkan kreativitas anak-anak dan peran ibu.
+    </p>
+  </section>
+
+  <section class="info" data-aos="fade-up-right">
+    <h3>18 Mei 2025 – Jalan Sehat Bersama Warga</h3>
+    <p>
+      Kegiatan jalan sehat dan senam pagi bersama diadakan oleh PKK dan Posyandu sebagai upaya menjaga kebugaran dan
+      menjalin keakraban antarwarga.
+    </p>
+  </section>
+
+  <section class="info" data-aos="fade-up-right">
+    <h3>28 Mei 2025 – Musyawarah Perencanaan Pembangunan Desa</h3>
+    <p>
+      Pemerintah desa mengadakan Musrenbangdes untuk membahas program kerja dan pembangunan prioritas tahun 2026 dengan
+      partisipasi seluruh elemen masyarakat.
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Desa Pakijangan. Dibangun dengan cinta untuk masyarakat.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+<style>
+  /* Reset dan dasar */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #f7fafc;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  .container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+  }
+
+  /* Header */
+  header {
+    background-color: #2e8b57;
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .logo-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  .logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    animation: fadeScaleIn 1s ease forwards;
+  }
+
+  @keyframes fadeScaleIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  header h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  /* Navbar */
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 15px;
+    flex-wrap: wrap;
+  }
+
+  nav ul li {
+    margin: 10px 20px;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding-bottom: 4px;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+
+  nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffd700;
+    transition: width 0.3s ease;
+  }
+
+  nav ul li a:hover::after,
+  nav ul li a.active::after {
+    width: 100%;
+  }
+
+  nav ul li a:hover,
+  nav ul li a.active {
+    color: #ffd700;
+  }
+
+  /* Hero Section */
+  .hero {
+    background-color: #e6f4ea;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 30px auto 0 auto;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  .hero p {
+    margin-bottom: 20px;
+  }
+
+  /* Info / Berita Section */
+  .info {
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-left: 5px solid #2e8b57;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    max-width: 900px;
+  }
+
+  .info h3 {
+    font-size: 1.3rem;
+    color: #2e8b57;
+    margin-bottom: 10px;
+  }
+
+  .info p {
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+
+  /* Footer */
+  footer {
+    background-color: #2e8b57;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    font-size: 0.9rem;
+  }
+
+  /* Responsif */
+  @media (max-width: 600px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    nav ul li {
+      margin: 8px 0;
+    }
+
+    .logo-title {
+      flex-direction: column;
+    }
+
+    .logo-title h1 {
+      font-size: 1.6rem;
+    }
+
+    .hero {
+      padding: 30px 15px;
+    }
+
+    .info {
+      padding: 15px;
+    }
+  }
+
+  /* Hilangkan scrollbar (opsional) */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+</style>
+
+</html>

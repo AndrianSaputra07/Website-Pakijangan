@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Desa Pakijangan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="logo-title">
+        <img src="Logo kab.png" alt="Logo Kab Pasuruan" class="logo" />
+        <h1>Desa Pakijangan</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Beranda</a></li>
+          <li><a href="profil.html">Profil Desa</a></li>
+          <li><a href="layanan.html">Layanan</a></li>
+          <li><a href="berita.html">Berita</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+    <h2>Selamat Datang di Portal Resmi Desa Pakijangan</h2>
+    <p>Menjadi wadah informasi dan layanan untuk masyarakat Kecamatan Wonorejo, Kabupaten Pasuruan</p>
+  </section>
+
+  <section class="info" data-aos="fade-up">
+    <marquee behavior="scroll" direction="left" scrollamount="5" style="color:#2e8b57; font-weight:600;">
+      ⚠️ Pengumuman: Mohon partisipasi seluruh warga dalam kegiatan Gotong Royong Bersih Desa pada 6 Juli 2025 pukul
+      07.00 WIB ⚠️
+    </marquee>
+  </section>
+
+  <section class="info" data-aos="fade-up">
+    <h3>Cuaca Hari Ini</h3>
+    <p>🌤️ Cerah Berawan - 29°C (Data cuaca sementara)</p>
+  </section>
+
+  <section class="info" data-aos="fade-up-right">
+    <h3>Berita Terbaru</h3>
+    <ul>
+      <li><strong>[18 Mei 2025]</strong> Jalan Sehat Bersama Warga.</li>
+      <li><strong>[28 Mei 2025]</strong> Musyawarah Perencanaan Pembangunan Desa.</li>
+    </ul>
+  </section>
+
+  <section class="info" data-aos="fade-up">
+    <h3>Galeri Unggulan</h3>
+    <div class="slider">
+      <img id="slide-img" src="foto1.jpg" alt="Slider Foto Desa" />
+    </div>
+  </section>
+
+  <section class="agenda" data-aos="fade-up">
+    <h3>Agenda Kegiatan</h3>
+    <ul>
+      <li><strong>10 Juni 2025:</strong> Rapat RT dan RW Desa Pakijangan</li>
+      <li><strong>25 Juni 2025:</strong> Festival Seni Budaya Desa Pakijangan</li>
+      <li><strong>5 Juli 2025:</strong> Gotong Royong Bersih Desa</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Desa Pakijangan. Dibangun dengan cinta untuk masyarakat.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    // Slider Sederhana
+    const images = ['foto1.jpg', 'foto2.jpg', 'foto3.jpg', 'foto4.jpg'];
+    let index = 0;
+    const slideImg = document.getElementById('slide-img');
+
+    setInterval(() => {
+      index = (index + 1) % images.length;
+      slideImg.src = images[index];
+    }, 3000);
+  </script>
+</body>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #f7fafc;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  .container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+  }
+
+  header {
+    background-color: #2e8b57;
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .logo-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    justify-content: center;
+  }
+
+  .logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    animation: fadeScaleIn 1s ease forwards;
+  }
+
+  @keyframes fadeScaleIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  header h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 15px;
+    flex-wrap: wrap;
+  }
+
+  nav ul li {
+    margin: 10px 20px;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding-bottom: 4px;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+
+  nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffd700;
+    transition: width 0.3s ease;
+  }
+
+  nav ul li a:hover::after,
+  nav ul li a.active::after {
+    width: 100%;
+  }
+
+  nav ul li a:hover,
+  nav ul li a.active {
+    color: #ffd700;
+  }
+
+  .hero {
+    background-color: #e6f4ea;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  .hero p {
+    margin-bottom: 20px;
+  }
+
+  .info {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-left: 5px solid #2e8b57;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+
+  .info h3 {
+    font-size: 1.4rem;
+    color: #2e8b57;
+    margin-bottom: 10px;
+  }
+
+  .info p,
+  .info ul li {
+    margin-bottom: 10px;
+  }
+
+  .slider {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .slider img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.5s ease;
+  }
+
+  .agenda {
+    margin-top: 40px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    border-left: 5px solid #3cb371;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+
+  .agenda ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .agenda li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .agenda li:last-child {
+    border-bottom: none;
+  }
+
+  footer {
+    background-color: #2e8b57;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 600px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    nav ul li {
+      margin: 8px 0;
+    }
+
+    .logo-title {
+      flex-direction: column;
+    }
+
+    .logo-title h1 {
+      font-size: 1.6rem;
+    }
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+</style>
+
+</html>
